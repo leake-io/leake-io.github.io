@@ -87,6 +87,16 @@
       color: #969696;
     }
 
+    p .mobileBreak {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      p .mobileBreak {
+        display: initial;
+      }
+    }
+
     .alignLeft {
       float: left;
     }
@@ -109,8 +119,8 @@
       <p class="alignRight contact"><a href="https://github.com/leake-io">github.com/leake-io</a></p>
     </div>
     <div class="footer">
-      <p>Office: C/O Intouch Accounting Everdene House, Deansleigh Road, Bournemouth, United Kingdom, BH7 7DU </p>
-      <p>&copy; 2024 Leake.io Limited, All rights reserved. Leake.io is registered in England & Wales. Company Registration No. 12176613, VAT Registration No. 330745518</p>
+      <p>Office: C/O Intouch Accounting Everdene House, Deansleigh Road, <br class="mobileBreak">Bournemouth, United Kingdom, BH7 7DU </p>
+      <p>&copy; 2024 Leake.io Limited, All rights reserved. Leake.io is registered in England & Wales. <br class="mobileBreak">Company Registration No. 12176613, VAT Registration No. 330745518</p>
     </div>
   </main>
 </body>
