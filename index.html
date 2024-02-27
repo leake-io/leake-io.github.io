@@ -82,8 +82,32 @@
     }
 
     footer p {
-      margin: 3px;
+      margin: 0;
+
       color: #969696;
+    }
+
+    footer .footerText {
+      margin-top: 3px;
+
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @media only screen and (max-width: 359px) {
+      .card div.contact {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card a {
+        margin-bottom: 6px;
+      }
+
+      .card hr {
+        width: 93vw;
+      }
     }
   </style>
 </head>
@@ -100,8 +124,17 @@
       </div>
     </article>
       <footer>
-        <p>Office: C/O Intouch Accounting Everdene House, Deansleigh Road, Bournemouth, United Kingdom, BH7 7DU </p>
-        <p>&copy; 2024 Leake.io Limited, All rights reserved. Leake.io is registered in England & Wales. Company Registration No. 12176613, VAT Registration No. 330745518</p>
+        <div class="footerText">
+          <p>Office: C/O Intouch Accounting Everdene House,&nbsp;</p>
+          <p>Deansleigh Road, Bournemouth,&nbsp;</p>
+          <p>United Kingdom, BH7 7DU</p>
+        </div>
+        <div class="footerText">
+          <p>&copy; 2024 Leake.io Limited, All rights reserved.&nbsp;</p>
+          <p>Leake.io is registered in England & Wales.&nbsp;</p>
+          <p>Company Registration No. 12176613,&nbsp;</p>
+          <p>VAT Registration No. 330745518&nbsp;</p>
+        </div>
       </footer>
   </main>
 </body>
