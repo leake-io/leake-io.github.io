@@ -24,15 +24,17 @@ main {
   font-size: 0.6em;
 }
 
-.card p {
-  text-align: center;
-}
-
-.card p.name {
+.card h2.name {
   margin: 0;
+  
+  text-align: center;
 
   font-size: calc(2.5em + 2.5vw);
   font-weight: bold;
+}
+
+.card p {
+  text-align: center;
 }
 
 .card p.motto {
